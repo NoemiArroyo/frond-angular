@@ -12,11 +12,24 @@ export const routes: Routes = [
         { path:'lista-tienda',
             loadComponent: ()=> import('./tiendas/tiendas.component') 
          },
+         { path:'lista-tarifas',
+            loadComponent: ()=> import('./tarifas/tarifas/tarifas.component')
+         },
+         { path:'create-tienda',
+            loadComponent: ()=> import('./create-tienda/create-tienda.component')
+         },
+         { path:'edit-tienda/:id',
+            loadComponent: ()=> import('./actualizar-tienda/actualizar-tienda.component')
+         },
+
+
          {
             path:'',
             redirectTo:'home-view',
             pathMatch:'full',
          }
+
+
 
     ]
         
